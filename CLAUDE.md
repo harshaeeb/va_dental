@@ -43,6 +43,7 @@ va_dental/                       # repo root = Railway build root
 - Set branch to `claude/quirky-curie-p7FZ2`
 - **Root Directory**: leave blank (Dockerfile is at repo root)
 - Railway auto-builds from `Dockerfile`
+- **Deployed URL**: https://vadental-production.up.railway.app
 
 ### Environment variables to set in Railway dashboard
 ```
@@ -66,9 +67,9 @@ CLINIC_NAME=Bright Smile Dental
 - [x] `calendar_service.py` supports `GOOGLE_CREDENTIALS_JSON` env var (Railway)
 - [x] Google credentials JSON obtained (project: va-dental-demo)
 - [x] Vapi API key obtained
-- [ ] Railway project deployed successfully
-- [ ] `SERVER_URL` updated in `vapi_setup/create_assistant.py`
-- [ ] Vapi assistant registered
+- [x] Railway project deployed successfully (https://vadental-production.up.railway.app)
+- [x] `SERVER_URL` updated in `vapi_setup/create_assistant.py`
+- [x] Vapi assistant registered (ID: 62e72b31-22e9-4078-b32a-17551f176bfa)
 - [ ] Phone number assigned in Vapi dashboard
 
 ## Vapi Tools (3 tools)
