@@ -2,7 +2,7 @@
 
 ## Project Summary
 A voice AI receptionist named **Aria** for **Bright Smile Dental** (demo clinic).  
-Stack: Vapi.ai · Google Calendar API · Python/FastAPI · Google Cloud Run
+Stack: Vapi.ai · Google Calendar API · Python/FastAPI · Railway
 
 ## Repository
 - Repo: `harshaeeb/va_dental`
@@ -19,8 +19,8 @@ dental-voice-agent/
 ├── vapi_setup/
 │   └── create_assistant.py      # Run ONCE after deploy to register Aria in Vapi
 ├── requirements.txt
-├── Dockerfile                   # Uses ${PORT:-8080} for Cloud Run compatibility
-├── .gcloudignore
+├── Dockerfile                   # Uses ${PORT:-8080} for Railway/Cloud Run compatibility
+├── railway.toml
 └── .env.example
 ```
 
@@ -31,46 +31,41 @@ dental-voice-agent/
 - **Clinic timezone**: `America/Chicago`
 - **Clinic name**: `Bright Smile Dental`
 - **Vapi API key**: stored in `.env` as `VAPI_API_KEY` (gitignored)
-- **Google credentials**: `google-credentials.json` (gitignored, also stored in GCP Secret Manager as `google-credentials`)
+- **Google credentials**: `google-credentials.json` (gitignored)
 
-## Deployment Target: Google Cloud Run
-Region: `us-central1`
-Service name: `dental-voice-agent`
-Image: `us-central1-docker.pkg.dev/va-dental-demo/dental-voice-agent/app:latest`
+## Credentials Strategy
+- **Railway**: set `GOOGLE_CREDENTIALS_JSON` env var to the full JSON content of `google-credentials.json`
+- **Cloud Run**: mount via Secret Manager at `GOOGLE_CREDENTIALS_PATH=/app/google-credentials.json`
+- `calendar_service.py` checks `GOOGLE_CREDENTIALS_JSON` first, falls back to file path
 
-### Environment variables set on Cloud Run
+## Deployment Target: Railway
+- Connect `harshaeeb/va_dental` GitHub repo in Railway dashboard
+- Set branch to `claude/quirky-curie-p7FZ2`
+- Railway auto-builds from `Dockerfile`
+
+### Environment variables to set in Railway dashboard
 ```
-VAPI_API_KEY=<from .env>
+VAPI_API_KEY=<vapi private key>
+GOOGLE_CREDENTIALS_JSON=<full contents of google-credentials.json>
 GOOGLE_CALENDAR_ID=harsha.eeb@gmail.com
-GOOGLE_CREDENTIALS_PATH=/app/google-credentials.json
 CLINIC_TIMEZONE=America/Chicago
 CLINIC_NAME=Bright Smile Dental
 ```
-Secret mount: `google-credentials` (Secret Manager) → `/app/google-credentials.json`
 
-## Deployment Steps (summary)
-```bash
-# From inside dental-voice-agent/ folder
-gcloud config set project va-dental-demo
-gcloud services enable run.googleapis.com cloudbuild.googleapis.com artifactregistry.googleapis.com secretmanager.googleapis.com
-gcloud artifacts repositories create dental-voice-agent --repository-format=docker --location=us-central1
-gcloud secrets create google-credentials --data-file=google-credentials.json
-PROJECT_NUMBER=$(gcloud projects describe va-dental-demo --format='value(projectNumber)')
-gcloud secrets add-iam-policy-binding google-credentials \
-  --member="serviceAccount:${PROJECT_NUMBER}-compute@developer.gserviceaccount.com" \
-  --role="roles/secretmanager.secretAccessor"
-gcloud builds submit --tag us-central1-docker.pkg.dev/va-dental-demo/dental-voice-agent/app:latest
-gcloud run deploy dental-voice-agent \
-  --image us-central1-docker.pkg.dev/va-dental-demo/dental-voice-agent/app:latest \
-  --platform managed --region us-central1 --allow-unauthenticated \
-  --port 8080 --min-instances 1 --max-instances 10 \
-  --set-secrets="/app/google-credentials.json=google-credentials:latest" \
-  --set-env-vars="VAPI_API_KEY=<key>,GOOGLE_CALENDAR_ID=harsha.eeb@gmail.com,GOOGLE_CREDENTIALS_PATH=/app/google-credentials.json,CLINIC_TIMEZONE=America/Chicago,CLINIC_NAME=Bright Smile Dental"
-gcloud run services describe dental-voice-agent --region us-central1 --format='value(status.url)'
-```
+## Deployment Steps (Railway — dashboard method)
+1. Go to railway.app → New Project → Deploy from GitHub repo
+2. Select `harshaeeb/va_dental`, branch `claude/quirky-curie-p7FZ2`
+3. Railway detects Dockerfile and builds automatically
+4. Go to project → Variables tab → add all env vars above
+5. For `GOOGLE_CREDENTIALS_JSON`: paste the full JSON from `google-credentials.json`
+6. Go to Settings → Networking → Generate Domain → copy the URL
+7. Update `SERVER_URL` in `vapi_setup/create_assistant.py` with the Railway URL
+8. Run: `python vapi_setup/create_assistant.py`
+9. Copy the printed `Assistant ID`
+10. Go to Vapi dashboard → Phone Numbers → assign `Bright Smile Dental Receptionist`
 
 ## Post-Deploy: Register Aria in Vapi
-1. Update `SERVER_URL` in `vapi_setup/create_assistant.py` with the Cloud Run URL
+1. Update `SERVER_URL` in `vapi_setup/create_assistant.py` with the Railway URL
 2. Run: `python vapi_setup/create_assistant.py`
 3. Copy the printed `Assistant ID`
 4. Go to Vapi dashboard → Phone Numbers → assign `Bright Smile Dental Receptionist`
@@ -78,11 +73,11 @@ gcloud run services describe dental-voice-agent --region us-central1 --format='v
 ## Current Status
 - [x] All code written and validated
 - [x] Pushed to GitHub branch `claude/quirky-curie-p7FZ2`
-- [x] Dockerfile updated for Cloud Run (`${PORT:-8080}`)
-- [x] `.gcloudignore` added
+- [x] Dockerfile uses `${PORT:-8080}` (Railway + Cloud Run compatible)
+- [x] `calendar_service.py` supports `GOOGLE_CREDENTIALS_JSON` env var (Railway)
 - [x] Google credentials JSON obtained (project: va-dental-demo)
 - [x] Vapi API key obtained
-- [ ] Cloud Run deployed (awaiting user to run gcloud commands)
+- [ ] Railway project created and deployed
 - [ ] `SERVER_URL` updated in `create_assistant.py`
 - [ ] Vapi assistant registered (run `create_assistant.py` after deploy)
 - [ ] Phone number assigned in Vapi dashboard
@@ -97,5 +92,5 @@ gcloud run services describe dental-voice-agent --region us-central1 --format='v
 ## Important Notes
 - Calendar must be shared with service account email (`sa-va-dental-demo@...`) with "Make changes to events" permission
 - `CalendarService` is lazy-loaded — server starts fine without credentials, fails gracefully on tool calls
-- `strftime("%-I:%M %p")` uses Linux-only `%-I` format — works on Cloud Run (Linux), not Windows
-- Sandbox SSL proxy blocks outbound Google API calls in this dev environment — works fine on Cloud Run
+- `strftime("%-I:%M %p")` uses Linux-only `%-I` format — works on Railway (Linux), not Windows
+- Sandbox SSL proxy blocks outbound Google API calls in this dev environment — works fine on Railway

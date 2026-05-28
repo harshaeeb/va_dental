@@ -8,9 +8,17 @@ SCOPES = ["https://www.googleapis.com/auth/calendar"]
 
 class CalendarService:
     def __init__(self):
-        creds = service_account.Credentials.from_service_account_file(
-            os.getenv("GOOGLE_CREDENTIALS_PATH"), scopes=SCOPES
-        )
+        # Prefer inline JSON env var (Railway) over file path (Cloud Run / local)
+        creds_json = os.getenv("GOOGLE_CREDENTIALS_JSON")
+        if creds_json:
+            import json as _json
+            creds = service_account.Credentials.from_service_account_info(
+                _json.loads(creds_json), scopes=SCOPES
+            )
+        else:
+            creds = service_account.Credentials.from_service_account_file(
+                os.getenv("GOOGLE_CREDENTIALS_PATH"), scopes=SCOPES
+            )
         self.service = build("calendar", "v3", credentials=creds)
         self.calendar_id = os.getenv("GOOGLE_CALENDAR_ID")
         self.timezone = os.getenv("CLINIC_TIMEZONE", "America/Chicago")

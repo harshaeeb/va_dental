@@ -23,11 +23,14 @@ _calendar = None
 def get_calendar():
     global _calendar
     if _calendar is None:
-        creds_path = os.getenv("GOOGLE_CREDENTIALS_PATH", "")
-        if not creds_path or not os.path.exists(creds_path):
+        has_json = bool(os.getenv("GOOGLE_CREDENTIALS_JSON"))
+        has_file = bool(os.getenv("GOOGLE_CREDENTIALS_PATH")) and os.path.exists(
+            os.getenv("GOOGLE_CREDENTIALS_PATH", "")
+        )
+        if not has_json and not has_file:
             raise RuntimeError(
                 "Google credentials not configured. "
-                "Set GOOGLE_CREDENTIALS_PATH and ensure the file exists."
+                "Set GOOGLE_CREDENTIALS_JSON or GOOGLE_CREDENTIALS_PATH."
             )
         from calendar_service import CalendarService
         _calendar = CalendarService()
