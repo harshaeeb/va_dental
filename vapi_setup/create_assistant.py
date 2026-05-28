@@ -185,10 +185,6 @@ def main():
             "temperature": 0.4,
             "toolIds": tool_ids,
         },
-        "voice": {
-            "provider": "11labs",
-            "voiceId": "rachel",
-        },
         "transcriber": {
             "provider": "deepgram",
             "model": "nova-2",
