@@ -1,0 +1,54 @@
+{
+  "clinic_name": "Bright Smile Dental",
+  "address": "123 Main Street, Springfield, IL 62701",
+  "phone": "(555) 123-4567",
+  "hours": {
+    "monday":    "8:00 AM – 5:00 PM",
+    "tuesday":   "8:00 AM – 5:00 PM",
+    "wednesday": "8:00 AM – 7:00 PM",
+    "thursday":  "8:00 AM – 5:00 PM",
+    "friday":    "8:00 AM – 3:00 PM",
+    "saturday":  "9:00 AM – 1:00 PM",
+    "sunday":    "Closed"
+  },
+  "services": [
+    {"name": "New Patient Exam",   "duration_minutes": 60},
+    {"name": "Routine Cleaning",   "duration_minutes": 45},
+    {"name": "Teeth Whitening",    "duration_minutes": 90},
+    {"name": "Emergency Visit",    "duration_minutes": 30},
+    {"name": "Consultation",       "duration_minutes": 30},
+    {"name": "X-Ray",              "duration_minutes": 20},
+    {"name": "Filling",            "duration_minutes": 60},
+    {"name": "Crown Fitting",      "duration_minutes": 90}
+  ],
+  "insurance": [
+    "Delta Dental", "Cigna", "Aetna", "BlueCross BlueShield",
+    "MetLife", "Guardian", "United Healthcare"
+  ],
+  "faqs": [
+    {
+      "q": "Do you accept walk-ins?",
+      "a": "We recommend scheduling in advance, but we do our best to accommodate same-day emergency visits. Please call us and we'll fit you in as soon as possible."
+    },
+    {
+      "q": "What should I bring to my first appointment?",
+      "a": "Please bring a valid photo ID, your insurance card, and any previous dental records if available. Arrive 10 minutes early to complete new patient paperwork."
+    },
+    {
+      "q": "How do I cancel or reschedule?",
+      "a": "We ask for at least 24 hours notice to cancel or reschedule. You can call us or I can help you reschedule right now."
+    },
+    {
+      "q": "Do you offer payment plans?",
+      "a": "Yes, we offer CareCredit financing and in-house payment plans for larger treatments. Ask our front desk for details."
+    },
+    {
+      "q": "Is parking available?",
+      "a": "Yes, we have a free parking lot directly in front of the clinic."
+    },
+    {
+      "q": "Do you treat children?",
+      "a": "Yes, we see patients of all ages, including children from age 3 and up."
+    }
+  ]
+}
