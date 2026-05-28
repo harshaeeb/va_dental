@@ -169,7 +169,9 @@ def main():
     tool_ids = []
     for tool in TOOLS:
         resp = httpx.post("https://api.vapi.ai/tool", headers=HEADERS, json=tool, timeout=30.0)
-        resp.raise_for_status()
+        if not resp.is_success:
+            print(f"  ERROR {resp.status_code}: {resp.text}")
+            resp.raise_for_status()
         tid = resp.json()["id"]
         tool_ids.append(tid)
         print(f"  ✓ {tool['function']['name']} → {tid}")
@@ -178,14 +180,14 @@ def main():
         "name": "Bright Smile Dental Receptionist",
         "model": {
             "provider": "anthropic",
-            "model": "claude-sonnet-4-5",
+            "model": "claude-3-5-sonnet-20241022",
             "systemPrompt": build_system_prompt(),
             "temperature": 0.4,
             "toolIds": tool_ids,
         },
         "voice": {
-            "provider": "playht",
-            "voiceId": "jennifer",
+            "provider": "11labs",
+            "voiceId": "rachel",
         },
         "transcriber": {
             "provider": "deepgram",
@@ -216,7 +218,9 @@ def main():
     resp = httpx.post(
         "https://api.vapi.ai/assistant", headers=HEADERS, json=assistant_config, timeout=30.0
     )
-    resp.raise_for_status()
+    if not resp.is_success:
+        print(f"  ERROR {resp.status_code}: {resp.text}")
+        resp.raise_for_status()
     assistant = resp.json()
     assistant_id = assistant["id"]
 
