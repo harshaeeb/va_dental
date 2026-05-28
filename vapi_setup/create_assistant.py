@@ -6,7 +6,7 @@ Prerequisites:
   2. SERVER_URL below is updated to your Railway deployment URL
 
 Usage:
-  cd dental-voice-agent
+  cd va_dental
   python vapi_setup/create_assistant.py
 
 On success, it prints your assistant ID. Copy it — you'll need it to assign
@@ -168,7 +168,7 @@ def main():
     print("Creating Vapi tools...")
     tool_ids = []
     for tool in TOOLS:
-        resp = httpx.post("https://api.vapi.ai/tool", headers=HEADERS, json=tool)
+        resp = httpx.post("https://api.vapi.ai/tool", headers=HEADERS, json=tool, timeout=30.0)
         resp.raise_for_status()
         tid = resp.json()["id"]
         tool_ids.append(tid)
@@ -214,7 +214,7 @@ def main():
 
     print("\nCreating assistant...")
     resp = httpx.post(
-        "https://api.vapi.ai/assistant", headers=HEADERS, json=assistant_config
+        "https://api.vapi.ai/assistant", headers=HEADERS, json=assistant_config, timeout=30.0
     )
     resp.raise_for_status()
     assistant = resp.json()
