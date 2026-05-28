@@ -6,7 +6,7 @@ Prerequisites:
   2. SERVER_URL below is updated to your Railway deployment URL
 
 Usage:
-  cd va_dental
+  cd dental-voice-agent
   python vapi_setup/create_assistant.py
 
 On success, it prints your assistant ID. Copy it — you'll need it to assign
@@ -29,10 +29,9 @@ if not VAPI_API_KEY:
     print("ERROR: VAPI_API_KEY not set in .env")
     sys.exit(1)
 
-# ── UPDATE THIS after Railway deployment ─────────────────────────────────────────────
-SERVER_URL = "https://YOUR-APP.up.railway.app/vapi/tool-call"
+# ── UPDATE THIS after Railway deployment ──────────────────────────────────────────────────────────
+SERVER_URL = "https://vadental-production.up.railway.app/vapi/tool-call"
 # ────────────────────────────────────────────────────────────────────────────────
-
 HEADERS = {
     "Authorization": f"Bearer {VAPI_API_KEY}",
     "Content-Type": "application/json",
@@ -64,9 +63,15 @@ TOOLS = [
         },
         "server": {"url": SERVER_URL},
         "messages": [
-            {"type": "request-start", "content": "Let me check what's available for you..."},
+            {
+                "type": "request-start",
+                "content": "Let me check what's available for you...",
+            },
             {"type": "request-complete", "content": "Here's what I found."},
-            {"type": "request-failed", "content": "I'm having trouble checking the calendar. Let me have someone call you back."},
+            {
+                "type": "request-failed",
+                "content": "I'm having trouble checking the calendar. Let me have someone call you back.",
+            },
         ],
     },
     {
@@ -77,20 +82,47 @@ TOOLS = [
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "patient_name": {"type": "string", "description": "Full name of the patient"},
-                    "patient_phone": {"type": "string", "description": "Patient's callback phone number"},
-                    "service": {"type": "string", "description": "Name of the dental service"},
-                    "date": {"type": "string", "description": "Appointment date in YYYY-MM-DD format"},
-                    "time": {"type": "string", "description": "Appointment time, e.g. '2:00 PM'"},
+                    "patient_name": {
+                        "type": "string",
+                        "description": "Full name of the patient",
+                    },
+                    "patient_phone": {
+                        "type": "string",
+                        "description": "Patient's callback phone number",
+                    },
+                    "service": {
+                        "type": "string",
+                        "description": "Name of the dental service",
+                    },
+                    "date": {
+                        "type": "string",
+                        "description": "Appointment date in YYYY-MM-DD format",
+                    },
+                    "time": {
+                        "type": "string",
+                        "description": "Appointment time, e.g. '2:00 PM'",
+                    },
                 },
-                "required": ["patient_name", "patient_phone", "service", "date", "time"],
+                "required": [
+                    "patient_name",
+                    "patient_phone",
+                    "service",
+                    "date",
+                    "time",
+                ],
             },
         },
         "server": {"url": SERVER_URL},
         "messages": [
-            {"type": "request-start", "content": "Let me book that for you now..."},
+            {
+                "type": "request-start",
+                "content": "Let me book that for you now...",
+            },
             {"type": "request-complete", "content": "All set!"},
-            {"type": "request-failed", "content": "I wasn't able to complete the booking. Our team will call you to confirm."},
+            {
+                "type": "request-failed",
+                "content": "I wasn't able to complete the booking. Our team will call you to confirm.",
+            },
         ],
     },
     {
@@ -101,17 +133,32 @@ TOOLS = [
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "caller_name": {"type": "string", "description": "Caller's full name"},
-                    "caller_phone": {"type": "string", "description": "Best callback number"},
-                    "message": {"type": "string", "description": "The message content"},
+                    "caller_name": {
+                        "type": "string",
+                        "description": "Caller's full name",
+                    },
+                    "caller_phone": {
+                        "type": "string",
+                        "description": "Best callback number",
+                    },
+                    "message": {
+                        "type": "string",
+                        "description": "The message content",
+                    },
                 },
                 "required": ["caller_name", "caller_phone", "message"],
             },
         },
         "server": {"url": SERVER_URL},
         "messages": [
-            {"type": "request-start", "content": "Got it, let me note that down..."},
-            {"type": "request-complete", "content": "I've passed your message to our team."},
+            {
+                "type": "request-start",
+                "content": "Got it, let me note that down...",
+            },
+            {
+                "type": "request-complete",
+                "content": "I've passed your message to our team.",
+            },
         ],
     },
 ]
@@ -136,11 +183,29 @@ def main():
             "temperature": 0.4,
             "toolIds": tool_ids,
         },
-        "voice": {"provider": "playht", "voiceId": "jennifer"},
-        "transcriber": {"provider": "deepgram", "model": "nova-2", "language": "en-US"},
-        "firstMessage": "Thank you for calling Bright Smile Dental! This is Aria. How can I help you today?",
-        "endCallMessage": "Thank you for calling Bright Smile Dental. Have a wonderful day!",
-        "endCallPhrases": ["goodbye", "bye", "that's all", "thank you bye", "no that's all"],
+        "voice": {
+            "provider": "playht",
+            "voiceId": "jennifer",
+        },
+        "transcriber": {
+            "provider": "deepgram",
+            "model": "nova-2",
+            "language": "en-US",
+        },
+        "firstMessage": (
+            "Thank you for calling Bright Smile Dental! This is Aria. "
+            "How can I help you today?"
+        ),
+        "endCallMessage": (
+            "Thank you for calling Bright Smile Dental. Have a wonderful day!"
+        ),
+        "endCallPhrases": [
+            "goodbye",
+            "bye",
+            "that's all",
+            "thank you bye",
+            "no that's all",
+        ],
         "silenceTimeoutSeconds": 20,
         "maxDurationSeconds": 600,
         "backgroundDenoisingEnabled": True,
@@ -148,9 +213,12 @@ def main():
     }
 
     print("\nCreating assistant...")
-    resp = httpx.post("https://api.vapi.ai/assistant", headers=HEADERS, json=assistant_config)
+    resp = httpx.post(
+        "https://api.vapi.ai/assistant", headers=HEADERS, json=assistant_config
+    )
     resp.raise_for_status()
-    assistant_id = resp.json()["id"]
+    assistant = resp.json()
+    assistant_id = assistant["id"]
 
     print(f"\n{'='*60}")
     print(f"  ✓ Assistant created successfully!")
@@ -159,7 +227,7 @@ def main():
     print("\nNext step:")
     print("  1. Go to https://dashboard.vapi.ai → Phone Numbers")
     print("  2. Click your number → Inbound Settings")
-    print("  3. Set Assistant to: Bright Smile Dental Receptionist")
+    print(f"  3. Set Assistant to: Bright Smile Dental Receptionist")
     print("  4. Save — your agent is live!")
 
 
