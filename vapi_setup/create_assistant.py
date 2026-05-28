@@ -179,8 +179,8 @@ def main():
     assistant_config = {
         "name": "Bright Smile Dental Receptionist",
         "model": {
-            "provider": "anthropic",
-            "model": "claude-3-5-sonnet-20241022",
+            "provider": "openai",
+            "model": "gpt-4o-mini",
             "systemPrompt": build_system_prompt(),
             "temperature": 0.4,
             "toolIds": tool_ids,
