@@ -89,6 +89,16 @@ CLINIC_NAME=Bright Smile Dental
 | `book_appointment` | Creates a Google Calendar event for the patient |
 | `take_message` | Logs caller name/phone/message to server stdout |
 
+## Vapi Assistant Details
+- **Assistant name**: `Bright Smile Dental Receptionist`
+- **Assistant ID**: `62e72b31-22e9-4078-b32a-17551f176bfa`
+- **Model**: `claude-sonnet-4-5` (Anthropic), temperature 0.4
+- **Voice**: PlayHT — jennifer
+- **Transcriber**: Deepgram nova-2 (en-US)
+- **Vapi API key**: `598d5af2-695a-4c93-9772-4386e22b2867`
+- To find the assistant: dashboard.vapi.ai → Assistants (left sidebar)
+- To assign to a phone number: Phone Numbers → click number → Inbound Settings → select assistant
+
 ## Important Notes
 - Calendar must be shared with `sa-va-dental-demo@va-dental-demo.iam.gserviceaccount.com` with "Make changes to events" permission
 - `CalendarService` is lazy-loaded — server starts fine without credentials
