@@ -1,7 +1,0 @@
-.env
-google-credentials.json
-__pycache__/
-*.pyc
-.venv/
-.DS_Store
-railway.toml
