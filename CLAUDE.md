@@ -72,6 +72,16 @@ CLINIC_NAME=Bright Smile Dental
 - [x] Vapi assistant registered (ID: 62e72b31-22e9-4078-b32a-17551f176bfa)
 - [ ] Phone number assigned in Vapi dashboard
 
+## Vapi Assistant Details
+- **Assistant name**: `Bright Smile Dental Receptionist`
+- **Assistant ID**: `62e72b31-22e9-4078-b32a-17551f176bfa`
+- **Model**: `claude-sonnet-4-5` (Anthropic), temperature 0.4
+- **Voice**: PlayHT — jennifer
+- **Transcriber**: Deepgram nova-2 (en-US)
+- **Vapi API key**: `598d5af2-695a-4c93-9772-4386e22b2867`
+- To find the assistant: dashboard.vapi.ai → Assistants (left sidebar)
+- To assign to a phone number: Phone Numbers → click number → Inbound Settings → select assistant
+
 ## Vapi Tools (3 tools)
 | Tool | Description |
 |------|-------------|
@@ -83,3 +93,4 @@ CLINIC_NAME=Bright Smile Dental
 - Calendar must be shared with `sa-va-dental-demo@va-dental-demo.iam.gserviceaccount.com` with "Make changes to events" permission
 - `CalendarService` is lazy-loaded — server starts fine without credentials
 - `strftime("%-I:%M %p")` is Linux-only — works on Railway, not Windows
+- Local git push always fails (proxy 403) — use MCP `mcp__github__push_files` for all GitHub writes
