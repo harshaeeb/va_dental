@@ -121,6 +121,37 @@ INLINE_TOOLS = [
     {
         "type": "function",
         "function": {
+            "name": "cancel_appointment",
+            "description": (
+                "Cancel an existing appointment using its Booking ID. "
+                "Always call this before rebooking if the patient wants to change their time."
+            ),
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "event_id": {
+                        "type": "string",
+                        "description": "The Booking ID returned when the appointment was created",
+                    },
+                },
+                "required": ["event_id"],
+            },
+        },
+        "server": {"url": SERVER_URL},
+        "messages": [
+            {
+                "type": "request-start",
+                "content": "Let me cancel that appointment...",
+            },
+            {
+                "type": "request-failed",
+                "content": "I wasn't able to cancel that appointment. Please call us directly to reschedule.",
+            },
+        ],
+    },
+    {
+        "type": "function",
+        "function": {
             "name": "take_message",
             "description": "Record a message from the caller to be passed to clinic staff.",
             "parameters": {

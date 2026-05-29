@@ -90,7 +90,7 @@ async def handle_tool_call(request: Request):
                 service_key = args["service"].lower()
                 duration = SERVICE_DURATIONS.get(service_key, 30)
 
-                get_calendar().book_appointment(
+                confirmation = get_calendar().book_appointment(
                     patient_name=args["patient_name"],
                     patient_phone=args["patient_phone"],
                     service=args["service"],
@@ -100,8 +100,13 @@ async def handle_tool_call(request: Request):
                 )
                 result_text = (
                     f"Appointment confirmed! {args['patient_name']} is booked for "
-                    f"{args['service']} on {args['date']} at {args['time']}."
+                    f"{args['service']} on {args['date']} at {args['time']}. "
+                    f"Booking ID: {confirmation['event_id']}"
                 )
+
+            elif tool_name == "cancel_appointment":
+                get_calendar().cancel_appointment(event_id=args["event_id"])
+                result_text = "The appointment has been cancelled successfully."
 
             elif tool_name == "take_message":
                 print(

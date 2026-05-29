@@ -112,3 +112,10 @@ class CalendarService:
             "confirmed": True,
             "summary": f"{patient_name} booked for {service} on {date_str} at {time_str}",
         }
+
+    def cancel_appointment(self, event_id: str) -> None:
+        """Deletes a Google Calendar event by its event ID."""
+        self.service.events().delete(
+            calendarId=self.calendar_id,
+            eventId=event_id,
+        ).execute()
