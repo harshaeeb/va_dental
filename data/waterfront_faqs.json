@@ -1,0 +1,113 @@
+{
+  "clinic_name": "Waterfront Family Dentistry",
+  "address": "5605 FM 423 #600, Frisco, TX 75034",
+  "phone": "(972) 987-4343",
+  "hours": {
+    "monday":    "9:00 AM – 5:00 PM",
+    "tuesday":   "9:00 AM – 7:00 PM",
+    "wednesday": "9:00 AM – 5:00 PM",
+    "thursday":  "9:00 AM – 5:00 PM",
+    "friday":    "9:00 AM – 5:00 PM",
+    "saturday":  "9:00 AM – 1:00 PM",
+    "sunday":    "Closed"
+  },
+  "services": [
+    {"name": "New Patient Exam",          "duration_minutes": 60},
+    {"name": "Routine Cleaning",          "duration_minutes": 60},
+    {"name": "Teeth Whitening",           "duration_minutes": 90},
+    {"name": "Emergency Visit",           "duration_minutes": 30},
+    {"name": "Consultation",              "duration_minutes": 30},
+    {"name": "X-Ray",                     "duration_minutes": 20},
+    {"name": "Filling",                   "duration_minutes": 60},
+    {"name": "Crown",                     "duration_minutes": 90},
+    {"name": "Bridge",                    "duration_minutes": 90},
+    {"name": "Dental Implant Consult",    "duration_minutes": 45},
+    {"name": "Invisalign Consult",        "duration_minutes": 45},
+    {"name": "ClearCorrect Consult",      "duration_minutes": 45},
+    {"name": "Veneers Consult",           "duration_minutes": 45},
+    {"name": "Root Canal",                "duration_minutes": 90},
+    {"name": "Dentures Consult",          "duration_minutes": 45},
+    {"name": "Pediatric Exam",            "duration_minutes": 45},
+    {"name": "Bonding",                   "duration_minutes": 60},
+    {"name": "Laser Treatment",           "duration_minutes": 60}
+  ],
+  "insurance": [
+    "Delta Dental", "Cigna", "Aetna", "BlueCross BlueShield",
+    "MetLife", "Guardian", "United Healthcare", "Humana",
+    "Principal", "Sun Life", "Ameritas", "Most PPO plans"
+  ],
+  "faqs": [
+    {
+      "q": "Who is the dentist at Waterfront Family Dentistry?",
+      "a": "Our lead dentist is Dr. Lavanya Rudrapatna — patients love her warm, gentle approach. She and our team are dedicated to making every visit comfortable."
+    },
+    {
+      "q": "Do you accept my insurance?",
+      "a": "We accept most PPO dental insurance plans, including Delta Dental, Cigna, Aetna, BlueCross BlueShield, MetLife, Guardian, and many others. If you're unsure, give us your provider name and we'll verify coverage before your appointment."
+    },
+    {
+      "q": "What if I don't have insurance?",
+      "a": "No problem — we offer the Waterfront Family Loyalty Program for patients without insurance, which gives you significant discounts on exams, cleanings, and other treatments. We also accept CareCredit financing for larger procedures."
+    },
+    {
+      "q": "Do you offer payment plans or financing?",
+      "a": "Yes! We accept CareCredit, which lets you pay over time with little or no interest. We also have our in-house Waterfront Family Loyalty Program for uninsured patients. Ask our team for details."
+    },
+    {
+      "q": "Do you treat children?",
+      "a": "Absolutely — we love seeing young patients! We offer pediatric dental exams and cleanings in a friendly, comfortable environment. We recommend children have their first visit around age one or when their first tooth comes in."
+    },
+    {
+      "q": "Do you offer Invisalign?",
+      "a": "Yes, we offer both Invisalign and ClearCorrect clear aligner treatments. Schedule a free consultation and Dr. Rudrapatna will assess whether you're a good candidate and walk you through your options."
+    },
+    {
+      "q": "Do you offer dental implants?",
+      "a": "Yes, we provide dental implant consultations and treatment. Implants are a great permanent solution for missing teeth. Book a consultation and we'll discuss your options and create a treatment plan."
+    },
+    {
+      "q": "What cosmetic services do you offer?",
+      "a": "We offer professional teeth whitening, porcelain veneers, Lumineers, dental bonding, and smile makeovers. Schedule a cosmetic consultation and we'll help you design the smile you've always wanted."
+    },
+    {
+      "q": "Do you accept walk-ins?",
+      "a": "We recommend scheduling in advance to ensure you get the time that works best for you. For dental emergencies, please call us right away and we'll do our best to see you the same day."
+    },
+    {
+      "q": "What should I bring to my first appointment?",
+      "a": "Please bring a valid photo ID, your insurance card, and any previous dental X-rays or records if you have them. We recommend arriving a few minutes early to complete your new patient forms."
+    },
+    {
+      "q": "How do I cancel or reschedule?",
+      "a": "We ask for at least 24 hours notice to cancel or reschedule. You can call us at (972) 987-4343, or I can help you reschedule right now."
+    },
+    {
+      "q": "Do you offer teeth whitening?",
+      "a": "Yes! We offer professional in-office teeth whitening that can brighten your smile by several shades in about 90 minutes. Results are much more effective than over-the-counter options."
+    },
+    {
+      "q": "Is parking available?",
+      "a": "Yes, there is free parking available at our Frisco location in the shopping center off FM 423."
+    },
+    {
+      "q": "Do you have other locations?",
+      "a": "Yes, in addition to our Frisco location, we have offices in Plano, Little Elm, and The Colony, Texas. Call us and we can help you find the nearest location."
+    },
+    {
+      "q": "Are you open on weekends?",
+      "a": "We're open on Saturdays from 9 AM to 1 PM for your convenience. We're closed on Sundays."
+    },
+    {
+      "q": "Do you offer emergency dental visits?",
+      "a": "Yes — dental pain, broken teeth, and other urgent issues are always a priority. Call us as soon as possible and we'll fit you in the same day whenever we can."
+    },
+    {
+      "q": "Do you use digital X-rays?",
+      "a": "Yes, we use modern digital X-ray technology, which uses up to 90% less radiation than traditional film X-rays and gives our team sharper, more detailed images for better diagnosis."
+    },
+    {
+      "q": "What is laser dentistry?",
+      "a": "We use dental lasers for certain gum treatments and procedures, which means less discomfort, faster healing, and often no need for a drill. Ask us whether laser treatment is right for your procedure."
+    }
+  ]
+}
