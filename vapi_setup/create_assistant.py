@@ -67,7 +67,6 @@ TOOLS = [
                 "type": "request-start",
                 "content": "Let me check what's available for you...",
             },
-            {"type": "request-complete", "content": "Here's what I found."},
             {
                 "type": "request-failed",
                 "content": "I'm having trouble checking the calendar. Let me have someone call you back.",
@@ -118,7 +117,6 @@ TOOLS = [
                 "type": "request-start",
                 "content": "Let me book that for you now...",
             },
-            {"type": "request-complete", "content": "All set!"},
             {
                 "type": "request-failed",
                 "content": "I wasn't able to complete the booking. Our team will call you to confirm.",
@@ -154,10 +152,6 @@ TOOLS = [
             {
                 "type": "request-start",
                 "content": "Got it, let me note that down...",
-            },
-            {
-                "type": "request-complete",
-                "content": "I've passed your message to our team.",
             },
         ],
     },
