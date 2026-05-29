@@ -1,7 +1,7 @@
 import json
 
 
-def build_system_prompt(faqs_path: str = "data/faqs.json") -> str:
+def build_system_prompt(faqs_path: str = "data/waterfront_faqs.json") -> str:
     with open(faqs_path) as f:
         data = json.load(f)
 

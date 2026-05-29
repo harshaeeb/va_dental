@@ -6,10 +6,10 @@ import os
 
 load_dotenv()
 
-app = FastAPI(title="Bright Smile Dental Voice Agent")
+app = FastAPI(title="Waterfront Family Dentistry Voice Agent")
 
 # Pre-load service durations for lookup by name
-with open("data/faqs.json") as f:
+with open("data/waterfront_faqs.json") as f:
     FAQ_DATA = json.load(f)
 
 SERVICE_DURATIONS: dict[str, int] = {
@@ -39,7 +39,7 @@ def get_calendar():
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "clinic": os.getenv("CLINIC_NAME", "Bright Smile Dental")}
+    return {"status": "ok", "clinic": os.getenv("CLINIC_NAME", "Waterfront Family Dentistry")}
 
 
 @app.post("/vapi/tool-call")

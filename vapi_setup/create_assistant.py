@@ -177,7 +177,7 @@ INLINE_TOOLS = [
 
 def main():
     assistant_config = {
-        "name": "Bright Smile Dental Receptionist",
+        "name": "Waterfront Family Dentistry Receptionist",
         "model": {
             "provider": "openai",
             "model": "gpt-4o-mini",
@@ -191,10 +191,10 @@ def main():
             "language": "en-US",
         },
         "firstMessage": (
-            "Thank you for calling Bright Smile Dental! This is Aria. "
+            "Thank you for calling Waterfront Family Dentistry! This is Aria. "
             "How can I help you today?"
         ),
-        "endCallMessage": "Thank you for calling Bright Smile Dental. Have a wonderful day!",
+        "endCallMessage": "Thank you for calling Waterfront Family Dentistry. Have a wonderful day!",
         "endCallPhrases": ["goodbye", "bye", "that's all", "thank you bye", "no that's all"],
         "silenceTimeoutSeconds": 20,
         "maxDurationSeconds": 600,
@@ -218,7 +218,7 @@ def main():
     print("\nNext step:")
     print("  1. Go to https://dashboard.vapi.ai → Phone Numbers")
     print("  2. Click your number → Inbound Settings")
-    print(f"  3. Set Assistant to: Bright Smile Dental Receptionist")
+    print(f"  3. Set Assistant to: Waterfront Family Dentistry Receptionist")
     print("  4. Save — your agent is live!")
 
 
