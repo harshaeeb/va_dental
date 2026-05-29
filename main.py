@@ -45,13 +45,29 @@ def health():
 @app.post("/vapi/tool-call")
 async def handle_tool_call(request: Request):
     body = await request.json()
+    print(f"[DEBUG] Incoming body: {json.dumps(body)}")
     message = body.get("message", {})
-    tool_calls = message.get("toolCallList", [])
+
+    # Support both pre-created tool format (toolCallList[].name) and
+    # inline/server tool format (toolCallList[].function.name)
+    raw_calls = message.get("toolCallList", [])
 
     results = []
-    for call in tool_calls:
-        tool_name = call.get("name")
-        args = call.get("arguments", {})
+    for call in raw_calls:
+        # Inline tools nest name/arguments under a "function" key
+        if "function" in call:
+            tool_name = call["function"].get("name")
+            raw_args = call["function"].get("arguments", {})
+            # arguments may arrive as a JSON string
+            if isinstance(raw_args, str):
+                try:
+                    raw_args = json.loads(raw_args)
+                except Exception:
+                    raw_args = {}
+            args = raw_args
+        else:
+            tool_name = call.get("name")
+            args = call.get("arguments", {})
         call_id = call.get("id")
 
         try:
