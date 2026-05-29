@@ -29,29 +29,30 @@ if not VAPI_API_KEY:
     print("ERROR: VAPI_API_KEY not set in .env")
     sys.exit(1)
 
-# ── UPDATE THIS after Railway deployment ──────────────────────────────────────────────────────────
 SERVER_URL = "https://vadental-production.up.railway.app/vapi/tool-call"
-# ────────────────────────────────────────────────────────────────────────────────
+
 HEADERS = {
     "Authorization": f"Bearer {VAPI_API_KEY}",
     "Content-Type": "application/json",
 }
 
-TOOLS = [
+# Tools defined inline — avoids toolIds routing issues in Vapi
+INLINE_TOOLS = [
     {
         "type": "function",
         "function": {
             "name": "check_availability",
             "description": (
                 "Check available appointment slots at the dental clinic "
-                "for a specific date and service duration."
+                "for a specific date and service duration. "
+                "Always convert the date to YYYY-MM-DD format before calling."
             ),
             "parameters": {
                 "type": "object",
                 "properties": {
                     "date": {
                         "type": "string",
-                        "description": "The date to check, in YYYY-MM-DD format",
+                        "description": "The date in YYYY-MM-DD format, e.g. 2026-05-30",
                     },
                     "duration_minutes": {
                         "type": "integer",
@@ -102,13 +103,7 @@ TOOLS = [
                         "description": "Appointment time, e.g. '2:00 PM'",
                     },
                 },
-                "required": [
-                    "patient_name",
-                    "patient_phone",
-                    "service",
-                    "date",
-                    "time",
-                ],
+                "required": ["patient_name", "patient_phone", "service", "date", "time"],
             },
         },
         "server": {"url": SERVER_URL},
@@ -131,18 +126,9 @@ TOOLS = [
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "caller_name": {
-                        "type": "string",
-                        "description": "Caller's full name",
-                    },
-                    "caller_phone": {
-                        "type": "string",
-                        "description": "Best callback number",
-                    },
-                    "message": {
-                        "type": "string",
-                        "description": "The message content",
-                    },
+                    "caller_name": {"type": "string", "description": "Caller's full name"},
+                    "caller_phone": {"type": "string", "description": "Best callback number"},
+                    "message": {"type": "string", "description": "The message content"},
                 },
                 "required": ["caller_name", "caller_phone", "message"],
             },
@@ -159,17 +145,6 @@ TOOLS = [
 
 
 def main():
-    print("Creating Vapi tools...")
-    tool_ids = []
-    for tool in TOOLS:
-        resp = httpx.post("https://api.vapi.ai/tool", headers=HEADERS, json=tool, timeout=30.0)
-        if not resp.is_success:
-            print(f"  ERROR {resp.status_code}: {resp.text}")
-            resp.raise_for_status()
-        tid = resp.json()["id"]
-        tool_ids.append(tid)
-        print(f"  ✓ {tool['function']['name']} → {tid}")
-
     assistant_config = {
         "name": "Bright Smile Dental Receptionist",
         "model": {
@@ -177,7 +152,7 @@ def main():
             "model": "gpt-4o-mini",
             "systemPrompt": build_system_prompt(),
             "temperature": 0.4,
-            "toolIds": tool_ids,
+            "tools": INLINE_TOOLS,
         },
         "transcriber": {
             "provider": "deepgram",
@@ -188,23 +163,14 @@ def main():
             "Thank you for calling Bright Smile Dental! This is Aria. "
             "How can I help you today?"
         ),
-        "endCallMessage": (
-            "Thank you for calling Bright Smile Dental. Have a wonderful day!"
-        ),
-        "endCallPhrases": [
-            "goodbye",
-            "bye",
-            "that's all",
-            "thank you bye",
-            "no that's all",
-        ],
+        "endCallMessage": "Thank you for calling Bright Smile Dental. Have a wonderful day!",
+        "endCallPhrases": ["goodbye", "bye", "that's all", "thank you bye", "no that's all"],
         "silenceTimeoutSeconds": 20,
         "maxDurationSeconds": 600,
         "backgroundDenoisingEnabled": True,
-        "serverUrl": SERVER_URL,
     }
 
-    print("\nCreating assistant...")
+    print("Creating assistant with inline tools...")
     resp = httpx.post(
         "https://api.vapi.ai/assistant", headers=HEADERS, json=assistant_config, timeout=30.0
     )
