@@ -45,7 +45,6 @@ def health():
 @app.post("/vapi/tool-call")
 async def handle_tool_call(request: Request):
     body = await request.json()
-    print(f"[DEBUG] Incoming body: {json.dumps(body)}")
     message = body.get("message", {})
 
     # Support both pre-created tool format (toolCallList[].name) and
