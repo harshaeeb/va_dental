@@ -1,113 +1,214 @@
 {
   "clinic_name": "Waterfront Family Dentistry",
-  "address": "5605 FM 423 #600, Frisco, TX 75034",
-  "phone": "(972) 987-4343",
+  "tagline": "Caring for Every Smile, Every Family",
+  "address": "255 W Lebanon St, Suite 300, Frisco, TX 75036",
+  "phone": "972-987-4343",
+  "email_primary": "office@waterfrontsmiles.com",
+  "email_secondary": "info@waterfrontsmiles.com",
+  "website": "waterfrontsmiles.com",
   "hours": {
-    "monday":    "9:00 AM – 5:00 PM",
-    "tuesday":   "9:00 AM – 7:00 PM",
-    "wednesday": "9:00 AM – 5:00 PM",
-    "thursday":  "9:00 AM – 5:00 PM",
-    "friday":    "9:00 AM – 5:00 PM",
-    "saturday":  "9:00 AM – 1:00 PM",
+    "monday":    "10:00 AM – 5:00 PM",
+    "tuesday":   "9:00 AM – 12:00 PM and 1:00 PM – 5:00 PM",
+    "wednesday": "9:00 AM – 12:00 PM and 1:00 PM – 5:00 PM",
+    "thursday":  "9:00 AM – 12:00 PM and 1:00 PM – 5:00 PM",
+    "friday":    "8:00 AM – 2:00 PM",
+    "saturday":  "Closed",
     "sunday":    "Closed"
   },
   "services": [
     {"name": "New Patient Exam",          "duration_minutes": 60},
     {"name": "Routine Cleaning",          "duration_minutes": 60},
+    {"name": "Preventive Exam",           "duration_minutes": 60},
     {"name": "Teeth Whitening",           "duration_minutes": 90},
     {"name": "Emergency Visit",           "duration_minutes": 30},
+    {"name": "Emergency Exam",            "duration_minutes": 30},
     {"name": "Consultation",              "duration_minutes": 30},
-    {"name": "X-Ray",                     "duration_minutes": 20},
+    {"name": "Digital X-Ray",             "duration_minutes": 20},
+    {"name": "Fluoride Treatment",        "duration_minutes": 30},
     {"name": "Filling",                   "duration_minutes": 60},
     {"name": "Crown",                     "duration_minutes": 90},
     {"name": "Bridge",                    "duration_minutes": 90},
     {"name": "Dental Implant Consult",    "duration_minutes": 45},
     {"name": "Invisalign Consult",        "duration_minutes": 45},
-    {"name": "ClearCorrect Consult",      "duration_minutes": 45},
+    {"name": "Orthodontic Consult",       "duration_minutes": 45},
     {"name": "Veneers Consult",           "duration_minutes": 45},
+    {"name": "Cosmetic Consult",          "duration_minutes": 30},
     {"name": "Root Canal",                "duration_minutes": 90},
+    {"name": "Tooth Extraction",          "duration_minutes": 45},
     {"name": "Dentures Consult",          "duration_minutes": 45},
     {"name": "Pediatric Exam",            "duration_minutes": 45},
     {"name": "Bonding",                   "duration_minutes": 60},
-    {"name": "Laser Treatment",           "duration_minutes": 60}
+    {"name": "Laser Treatment",           "duration_minutes": 60},
+    {"name": "Restorative Consult",       "duration_minutes": 30}
   ],
   "insurance": [
+    "Most PPO insurance plans accepted",
     "Delta Dental", "Cigna", "Aetna", "BlueCross BlueShield",
     "MetLife", "Guardian", "United Healthcare", "Humana",
-    "Principal", "Sun Life", "Ameritas", "Most PPO plans"
+    "Principal", "Sun Life", "Ameritas"
+  ],
+  "loyalty_program": {
+    "name": "Waterfront Family Loyalty Program",
+    "description": "Designed for patients without dental insurance to make affordable, quality dental care more accessible.",
+    "benefits": [
+      "2 Cleanings and Examinations per year",
+      "Additional cleanings at 50% discount",
+      "20% off all other dental treatments",
+      "Fluoride treatments for stronger teeth",
+      "One emergency exam included if required",
+      "Dental X-rays as needed"
+    ]
+  },
+  "providers": [
+    {
+      "name": "Dr. Lavi (Dr. Lavanya Rudrapatna)",
+      "title": "Lead Dentist",
+      "experience": "20+ years",
+      "bio": "Dr. Lavi combines skill, compassion, and advanced training to deliver the highest quality dental care. Her passion for continuous learning ensures patients receive the most modern, precise, and effective treatments available — all in one trusted, family-friendly clinic."
+    }
+  ],
+  "technology": [
+    "Digital X-rays (up to 90% less radiation than traditional film)",
+    "Laser dentistry for precise, comfortable gum and soft-tissue treatments",
+    "Minimally invasive techniques for faster recovery",
+    "State-of-the-art diagnostic and treatment equipment"
   ],
   "faqs": [
     {
-      "q": "Who is the dentist at Waterfront Family Dentistry?",
-      "a": "Our lead dentist is Dr. Lavanya Rudrapatna — patients love her warm, gentle approach. She and our team are dedicated to making every visit comfortable."
+      "q": "What is Waterfront Family Dentistry's address?",
+      "a": "We're located at 255 W Lebanon Street, Suite 300, Frisco, Texas 75036. We're easy to find and have free parking on site."
     },
     {
-      "q": "Do you accept my insurance?",
-      "a": "We accept most PPO dental insurance plans, including Delta Dental, Cigna, Aetna, BlueCross BlueShield, MetLife, Guardian, and many others. If you're unsure, give us your provider name and we'll verify coverage before your appointment."
-    },
-    {
-      "q": "What if I don't have insurance?",
-      "a": "No problem — we offer the Waterfront Family Loyalty Program for patients without insurance, which gives you significant discounts on exams, cleanings, and other treatments. We also accept CareCredit financing for larger procedures."
-    },
-    {
-      "q": "Do you offer payment plans or financing?",
-      "a": "Yes! We accept CareCredit, which lets you pay over time with little or no interest. We also have our in-house Waterfront Family Loyalty Program for uninsured patients. Ask our team for details."
-    },
-    {
-      "q": "Do you treat children?",
-      "a": "Absolutely — we love seeing young patients! We offer pediatric dental exams and cleanings in a friendly, comfortable environment. We recommend children have their first visit around age one or when their first tooth comes in."
-    },
-    {
-      "q": "Do you offer Invisalign?",
-      "a": "Yes, we offer both Invisalign and ClearCorrect clear aligner treatments. Schedule a free consultation and Dr. Rudrapatna will assess whether you're a good candidate and walk you through your options."
-    },
-    {
-      "q": "Do you offer dental implants?",
-      "a": "Yes, we provide dental implant consultations and treatment. Implants are a great permanent solution for missing teeth. Book a consultation and we'll discuss your options and create a treatment plan."
-    },
-    {
-      "q": "What cosmetic services do you offer?",
-      "a": "We offer professional teeth whitening, porcelain veneers, Lumineers, dental bonding, and smile makeovers. Schedule a cosmetic consultation and we'll help you design the smile you've always wanted."
-    },
-    {
-      "q": "Do you accept walk-ins?",
-      "a": "We recommend scheduling in advance to ensure you get the time that works best for you. For dental emergencies, please call us right away and we'll do our best to see you the same day."
-    },
-    {
-      "q": "What should I bring to my first appointment?",
-      "a": "Please bring a valid photo ID, your insurance card, and any previous dental X-rays or records if you have them. We recommend arriving a few minutes early to complete your new patient forms."
-    },
-    {
-      "q": "How do I cancel or reschedule?",
-      "a": "We ask for at least 24 hours notice to cancel or reschedule. You can call us at (972) 987-4343, or I can help you reschedule right now."
-    },
-    {
-      "q": "Do you offer teeth whitening?",
-      "a": "Yes! We offer professional in-office teeth whitening that can brighten your smile by several shades in about 90 minutes. Results are much more effective than over-the-counter options."
-    },
-    {
-      "q": "Is parking available?",
-      "a": "Yes, there is free parking available at our Frisco location in the shopping center off FM 423."
-    },
-    {
-      "q": "Do you have other locations?",
-      "a": "Yes, in addition to our Frisco location, we have offices in Plano, Little Elm, and The Colony, Texas. Call us and we can help you find the nearest location."
+      "q": "What are your office hours?",
+      "a": "We're open Monday from 10 AM to 5 PM, Tuesday through Thursday from 9 AM to noon and then 1 to 5 PM, and Friday from 8 AM to 2 PM. We're closed Saturday and Sunday."
     },
     {
       "q": "Are you open on weekends?",
-      "a": "We're open on Saturdays from 9 AM to 1 PM for your convenience. We're closed on Sundays."
+      "a": "We're currently closed on Saturday and Sunday. Our earliest available weekday is Monday starting at 10 AM, and we're open until 2 PM on Fridays."
     },
     {
-      "q": "Do you offer emergency dental visits?",
-      "a": "Yes — dental pain, broken teeth, and other urgent issues are always a priority. Call us as soon as possible and we'll fit you in the same day whenever we can."
+      "q": "Do you have a lunch break?",
+      "a": "Yes — Tuesday through Thursday we close for lunch from noon to 1 PM. Monday and Friday are continuous without a lunch break."
+    },
+    {
+      "q": "What is your phone number?",
+      "a": "You can reach us at 972-987-4343. You can also email us at office@waterfrontsmiles.com."
+    },
+    {
+      "q": "Who is the dentist at Waterfront Family Dentistry?",
+      "a": "Our lead dentist is Dr. Lavi — Dr. Lavanya Rudrapatna — with over 20 years of experience. Patients love her warm, gentle approach and commitment to the latest dental techniques. She and her team are dedicated to making every visit comfortable and stress-free."
+    },
+    {
+      "q": "How long has the practice been open?",
+      "a": "Dr. Lavi has over 20 years of experience in dentistry, and Waterfront Family Dentistry has built a strong reputation as a trusted dental home for families across Frisco and the surrounding area."
+    },
+    {
+      "q": "What services do you offer?",
+      "a": "We offer a full range of dental services including preventive care, professional cleanings, cosmetic dentistry like whitening and veneers, orthodontics and Invisalign, dental implants, restorative treatments like fillings and crowns, root canals, extractions, pediatric dentistry, laser treatment, and digital X-rays — all under one roof."
+    },
+    {
+      "q": "Do you offer preventive care?",
+      "a": "Yes — preventive dentistry is the foundation of everything we do. We provide professional cleanings, comprehensive exams, digital X-rays, and fluoride treatments to keep your smile healthy and catch any issues early."
+    },
+    {
+      "q": "Do you see children?",
+      "a": "Absolutely! We love treating patients of all ages. Our pediatric dental visits are designed to be gentle, fun, and stress-free so kids actually enjoy coming to the dentist. We recommend your child's first visit around age one, or when their first tooth appears."
+    },
+    {
+      "q": "Do you offer cosmetic dentistry?",
+      "a": "Yes! We offer professional teeth whitening, porcelain veneers, dental bonding, and smile makeovers. Schedule a cosmetic consultation and Dr. Lavi will help design the smile you've always wanted."
+    },
+    {
+      "q": "Do you offer teeth whitening?",
+      "a": "Yes — we provide professional in-office teeth whitening that can brighten your smile significantly in a single visit. The results are far more effective and longer-lasting than over-the-counter options."
+    },
+    {
+      "q": "Do you offer Invisalign or clear aligners?",
+      "a": "Yes! We offer Invisalign and orthodontic treatment with clear aligners. Schedule a free consultation and Dr. Lavi will assess whether you're a candidate and walk you through your options for a straighter smile."
+    },
+    {
+      "q": "Do you offer dental implants?",
+      "a": "Yes — we provide dental implant consultations and treatment for patients with missing teeth. Implants are a permanent, natural-looking solution. Book a consult and we'll create a personalized treatment plan."
+    },
+    {
+      "q": "Do you do root canals?",
+      "a": "Yes, we perform root canals to relieve pain and save teeth that would otherwise need extraction. We use precision techniques and advanced technology to make the procedure as comfortable as possible."
+    },
+    {
+      "q": "Do you offer dentures?",
+      "a": "Yes — we offer denture consultations and can discuss the best full or partial denture solutions for your needs. Schedule a consult and we'll walk you through your restoration options."
     },
     {
       "q": "Do you use digital X-rays?",
-      "a": "Yes, we use modern digital X-ray technology, which uses up to 90% less radiation than traditional film X-rays and gives our team sharper, more detailed images for better diagnosis."
+      "a": "Yes — our digital X-rays use up to 90% less radiation than traditional film X-rays and give our team sharper, more detailed images for more accurate diagnoses. They're fast, comfortable, and safe."
     },
     {
       "q": "What is laser dentistry?",
-      "a": "We use dental lasers for certain gum treatments and procedures, which means less discomfort, faster healing, and often no need for a drill. Ask us whether laser treatment is right for your procedure."
+      "a": "We use dental lasers for certain gum treatments and soft-tissue procedures. Laser treatment means greater precision, less discomfort, faster healing, and often no need for a drill. Ask us if laser treatment is right for your situation."
+    },
+    {
+      "q": "Do you accept dental insurance?",
+      "a": "Yes — we accept most PPO dental insurance plans, including Delta Dental, Cigna, Aetna, BlueCross BlueShield, MetLife, Guardian, United Healthcare, Humana, and many others. If you're unsure about your plan, call us and we'll verify your coverage before your appointment."
+    },
+    {
+      "q": "What if I don't have dental insurance?",
+      "a": "No worries — we have our Waterfront Family Loyalty Program specifically for patients without insurance. It includes 2 cleanings and exams per year, fluoride treatments, dental X-rays as needed, one emergency exam if required, additional cleanings at 50% off, and 20% off all other treatments. It's an affordable way to keep your smile healthy all year long."
+    },
+    {
+      "q": "What is the Waterfront Family Loyalty Program?",
+      "a": "It's our in-house membership plan for patients without dental insurance. Benefits include 2 cleanings and exams per year, fluoride treatments, dental X-rays as needed, one emergency exam if needed, additional cleanings at 50% off, and 20% off all other dental treatments. Ask our team about enrollment when you call."
+    },
+    {
+      "q": "Do you offer financing or payment plans?",
+      "a": "Yes — we accept CareCredit financing, which lets you pay over time with flexible payment options. We also have our Waterfront Family Loyalty Program for uninsured patients. Ask our front desk for details on either option."
+    },
+    {
+      "q": "Do you accept walk-ins?",
+      "a": "We recommend scheduling in advance to guarantee your preferred time. For dental emergencies — pain, a broken tooth, or swelling — please call us right away at 972-987-4343 and we'll do our best to see you the same day."
+    },
+    {
+      "q": "Do you handle dental emergencies?",
+      "a": "Yes — dental emergencies are a priority. If you're experiencing tooth pain, a broken or knocked-out tooth, swelling, or another urgent issue, call us immediately at 972-987-4343 and we'll fit you in as soon as possible."
+    },
+    {
+      "q": "What should I bring to my first appointment?",
+      "a": "Please bring a valid photo ID, your insurance card if you have one, and any previous dental records or X-rays if available. Arriving a few minutes early gives you time to complete your new patient forms."
+    },
+    {
+      "q": "How do I schedule an appointment?",
+      "a": "You can call us at 972-987-4343 or email office@waterfrontsmiles.com to book. I can also help you check availability and schedule right now — just let me know what type of appointment you need and your preferred date."
+    },
+    {
+      "q": "How do I cancel or reschedule my appointment?",
+      "a": "We ask for at least 24 hours notice to cancel or reschedule so we can offer that time to another patient. You can call us at 972-987-4343 or I can help you reschedule right now."
+    },
+    {
+      "q": "Is parking available?",
+      "a": "Yes — free parking is available at our location in the building complex at 255 W Lebanon Street, Suite 300 in Frisco."
+    },
+    {
+      "q": "What areas do you serve?",
+      "a": "We're based in Frisco, TX and proudly serve patients from Frisco and neighboring communities including The Colony, Little Elm, Plano, McKinney, and the broader Dallas-Fort Worth area."
+    },
+    {
+      "q": "What makes Waterfront Family Dentistry different?",
+      "a": "We combine over 20 years of experience with state-of-the-art technology — digital X-rays, laser dentistry, and minimally invasive techniques — all delivered with a genuinely warm, patient-centered approach. We take time to listen, explain every step, and make sure both kids and adults feel comfortable and at ease."
+    },
+    {
+      "q": "Do you take patients of all ages?",
+      "a": "Absolutely — we're a true family practice. We care for patients from toddlers to seniors, tailoring every visit to the patient's age, comfort level, and individual needs."
+    },
+    {
+      "q": "What if I'm nervous or anxious about the dentist?",
+      "a": "You're not alone — many patients feel that way. Our entire team is trained to work at your pace. Dr. Lavi takes time to explain everything before we begin, and we use gentle techniques and advanced technology to keep treatments as comfortable as possible. Just let us know you're nervous and we'll take extra care."
+    },
+    {
+      "q": "Do you send appointment reminders?",
+      "a": "Yes — we send reminders before your appointment so you don't have to worry about missing it. When you book, let our team know your preferred reminder method."
+    },
+    {
+      "q": "Where can I read patient reviews?",
+      "a": "You're welcome to check our reviews on Google, Yelp, and our Facebook page at facebook.com/waterfrontsmiles. Our patients consistently mention Dr. Lavi's gentle touch and the friendly, welcoming atmosphere."
     }
   ]
 }
