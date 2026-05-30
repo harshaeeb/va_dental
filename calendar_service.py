@@ -46,8 +46,8 @@ class CalendarService:
 
         busy_blocks = [
             (
-                datetime.fromisoformat(e["start"]["dateTime"].replace("Z", "")),
-                datetime.fromisoformat(e["end"]["dateTime"].replace("Z", "")),
+                datetime.fromisoformat(e["start"]["dateTime"].replace("Z", "")).replace(tzinfo=None),
+                datetime.fromisoformat(e["end"]["dateTime"].replace("Z", "")).replace(tzinfo=None),
             )
             for e in events_result.get("items", [])
             if "dateTime" in e.get("start", {})
