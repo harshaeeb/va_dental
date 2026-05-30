@@ -1,0 +1,612 @@
+Uri: https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\css-3
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\css-2
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\css-1
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css?family=Spartan:400%2C500%2C600%2C700%2C800%2C900|Inter:300%2C400%2C500%2C600%2C700%2C800%2C900&subset=latin%2Clatin-ext
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\css
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYAZFhjQ.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYAZFhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyYAZFhjQ.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyYAZFhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYAZFhjQ.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYAZFhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZFhjQ.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZFhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fAZFhjQ.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fAZFhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhjQ.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfAZFhjQ.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\inter\v20\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfAZFhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6WXh0ow.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6WXh0ow.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6WXh0ow.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq3p6WXh0ow.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9WXh0ow.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq5Z9WXh0ow.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8WXh0ow.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R8WXh0ow.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9WXh0ow.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq6R9WXh0ow.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16WXh0ow.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqw16WXh0ow.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6WXh0ow.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR6WXh0ow.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9WXh0ow.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jqyR9WXh0ow.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9WXh0ow.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq_p9WXh0ow.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw5aX8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw5aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aX8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw5aX8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw5aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw5aX8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw5aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w5aX8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu173w5aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aX8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w5aX8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w5aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Hw5aX8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr6Hw5aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v31/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w5aX8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\montserrat\v31\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w5aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLgHQuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLgHQuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLgHXuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLgHXuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLijXuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLijXuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLl_XuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLl_XuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLmbXuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLmbXuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHQuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHQuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHRuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHRuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLrPQuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLrPQuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QuAj-lg.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QuAj-lg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabVmUiA8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabVmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bVmUiA8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bVmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbFmUiA8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbFmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiA8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYaalmUiA8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYaalmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjalmUiA8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjalmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEalmUiA8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEalmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEbVmUiA8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEbVmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtalmUiA8.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\roboto\v51\KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtalmUiA8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rm.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rm.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\robotoslab\v36\BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rm.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/spartan/v22/l7gAbjR61M69yt8Z8w6FZf9WoBxdBrEFvl6HABE.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\spartan\v22\l7gAbjR61M69yt8Z8w6FZf9WoBxdBrEFvl6HABE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/spartan/v22/l7gAbjR61M69yt8Z8w6FZf9WoBxdBrEsvl6HABE.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\spartan\v22\l7gAbjR61M69yt8Z8w6FZf9WoBxdBrEsvl6HABE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/spartan/v22/l7gAbjR61M69yt8Z8w6FZf9WoBxdBrFbvl6HABE.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\spartan\v22\l7gAbjR61M69yt8Z8w6FZf9WoBxdBrFbvl6HABE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/spartan/v22/l7gAbjR61M69yt8Z8w6FZf9WoBxdBrFivl6HABE.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\spartan\v22\l7gAbjR61M69yt8Z8w6FZf9WoBxdBrFivl6HABE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/spartan/v22/l7gAbjR61M69yt8Z8w6FZf9WoBxdBrG3uV6HABE.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\spartan\v22\l7gAbjR61M69yt8Z8w6FZf9WoBxdBrG3uV6HABE.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/spartan/v22/l7gAbjR61M69yt8Z8w6FZf9WoBxdBrGFuV6HABE.ttf
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\s\spartan\v22\l7gAbjR61M69yt8Z8w6FZf9WoBxdBrGFuV6HABE.ttf
+Content Type: font/ttf
+
+Uri: https://themepanthers.com/wp/creote/v2-new/wp-content/uploads/2022/10/focus.png
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp\creote\v2-new\wp-content\uploads\2022\10\focus.png
+Content Type: image/png
+
+Uri: https://themepanthers.com/wp/creote/v2-new/wp-content/uploads/2022/10/shooting-target.png
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp\creote\v2-new\wp-content\uploads\2022\10\shooting-target.png
+Content Type: image/png
+
+Uri: https://themepanthers.com/wp/creote/v2-new/wp-content/uploads/2022/10/testi-1.png
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp\creote\v2-new\wp-content\uploads\2022\10\testi-1.png
+Content Type: image/png
+
+Uri: https://themepanthers.com/wp/creote/v2-new/wp-content/uploads/2022/10/testi-2.png
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp\creote\v2-new\wp-content\uploads\2022\10\testi-2.png
+Content Type: image/png
+
+Uri: https://themepanthers.com/wp/creote/v2-new/wp-content/uploads/2022/10/testi-3.png
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp\creote\v2-new\wp-content\uploads\2022\10\testi-3.png
+Content Type: image/png
+
+Uri: https://waterfrontsmiles.com/
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\index.htm
+Content Type: text/html
+
+Uri: https://waterfrontsmiles.com/about-us/
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\about-us\index.htm
+Content Type: text/html
+
+Uri: https://waterfrontsmiles.com/appointment/
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\appointment\index.htm
+Content Type: text/html
+
+Uri: https://waterfrontsmiles.com/comments/feed/
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\comments\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://waterfrontsmiles.com/contact-us-01/
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\contact-us-01\index.htm
+Content Type: text/html
+
+Uri: https://waterfrontsmiles.com/feed/
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\feed\index.htm
+Content Type: application/rss+xml
+
+Uri: https://waterfrontsmiles.com/home-15/
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\home-15\index.htm
+Content Type: text/html
+
+Uri: https://waterfrontsmiles.com/insurance/
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\insurance\index.htm
+Content Type: text/html
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.3
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\contact-form-7\includes\css\styles.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/creote-addons/assets/css/animate.css?ver=3.7.2
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\creote-addons\assets\css\animate.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/creote-addons/assets/css/aos.css?ver=1.0.0
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\creote-addons\assets\css\aos.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/creote-addons/assets/css/jquery.fancybox.min.css?ver=3.5.7
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\creote-addons\assets\css\jquery.fancybox.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/creote-addons/assets/css/owl.css?ver=2.3.4
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\creote-addons\assets\css\owl.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/creote-addons/assets/css/popupcss.css?ver=1.1.0
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\creote-addons\assets\css\popupcss.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/creote-addons/assets/css/swiper.min.css?ver=6.7.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\creote-addons\assets\css\swiper.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/creote-addons/assets/js/add-to-cart-ajax-single.js?ver=1779988941
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\creote-addons\assets\js\add-to-cart-ajax-single.js
+Content Type: application/x-javascript
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/creote-addons/assets/js/add-to-cart-ajax.js?ver=1780015090
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\creote-addons\assets\js\add-to-cart-ajax-3.js
+Content Type: application/x-javascript
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/creote-addons/assets/js/add-to-cart-ajax.js?ver=1780015802
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\creote-addons\assets\js\add-to-cart-ajax.js
+Content Type: application/x-javascript
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/creote-addons/assets/js/add-to-cart-ajax.js?ver=1780025328
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\creote-addons\assets\js\add-to-cart-ajax-4.js
+Content Type: application/x-javascript
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/creote-addons/assets/js/add-to-cart-ajax.js?ver=1780025334
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\creote-addons\assets\js\add-to-cart-ajax-1.js
+Content Type: application/x-javascript
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/creote-addons/assets/js/add-to-cart-ajax.js?ver=1780031780
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\creote-addons\assets\js\add-to-cart-ajax-2.js
+Content Type: application/x-javascript
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/creote-addons/assets/js/creote-elemetor-extension.js?ver=1779988941
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\creote-addons\assets\js\creote-elemetor-extension.js
+Content Type: application/x-javascript
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.31.2
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\elementor-pro\assets\css\widget-nav-menu.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/elementor/assets/css/conditionals/shapes.min.css?ver=4.0.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\elementor\assets\css\conditionals\shapes.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.0.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\elementor\assets\css\frontend.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/elementor/assets/css/widget-counter.min.css?ver=4.0.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\elementor\assets\css\widget-counter.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=4.0.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\elementor\assets\css\widget-divider.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.0.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\elementor\assets\css\widget-heading.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.0.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\elementor\assets\css\widget-image.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css?ver=4.0.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\elementor\assets\lib\animations\styles\fadeIn.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInLeft.min.css?ver=4.0.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\elementor\assets\lib\animations\styles\fadeInLeft.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=4.0.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\elementor\assets\lib\animations\styles\fadeInUp.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/elementor/assets/lib/animations/styles/slideInDown.min.css?ver=4.0.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\elementor\assets\lib\animations\styles\slideInDown.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/elementor/assets/lib/animations/styles/zoomIn.min.css?ver=4.0.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\elementor\assets\lib\animations\styles\zoomIn.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=4.0.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\elementor\assets\lib\font-awesome\css\all.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=4.0.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\elementor\assets\lib\font-awesome\css\v4-shims.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/hostinger-reach/frontend/dist/blocks/subscription.css?ver=1778776349
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\hostinger-reach\frontend\dist\blocks\subscription.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/revslider/public/css/sr7.css?ver=6.7.38
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\revslider\public\css\sr7.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/revslider/public/js/libs/tptools.js?ver=6.7.38
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\revslider\public\js\libs\tptools.js
+Content Type: application/x-javascript
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/revslider/public/js/sr7.js?ver=6.7.38
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\revslider\public\js\sr7.js
+Content Type: application/x-javascript
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-10.7.0
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\woocommerce\assets\client\blocks\wc-blocks.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/woocommerce/assets/css/prettyPhoto.css?ver=3.1.6
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\woocommerce\assets\css\prettyPhoto.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=10.7.0
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\woocommerce\assets\css\woocommerce-layout.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=10.7.0
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\woocommerce\assets\css\woocommerce-smallscreen.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=10.7.0
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\woocommerce\assets\css\woocommerce.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/wp-job-manager/assets/dist/css/job-listings.css?ver=598383a28ac5f9f156e4
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\wp-job-manager\assets\dist\css\job-listings.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/yith-woocommerce-compare/assets/css/compare.css?ver=3.9.0
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\yith-woocommerce-compare\assets\css\compare.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/yith-woocommerce-compare/assets/css/jquery.dataTables.css?ver=1.10.18
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\yith-woocommerce-compare\assets\css\jquery.dataTables.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/yith-woocommerce-compare/assets/css/widget.css?ver=3.9.0
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\yith-woocommerce-compare\assets\css\widget.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/yith-woocommerce-wishlist/assets/css/frontend/add-to-wishlist.css?ver=4.14.0
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\yith-woocommerce-wishlist\assets\css\frontend\add-to-wishlist.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/yith-woocommerce-wishlist/assets/css/jquery.selectBox.css?ver=1.2.0
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\yith-woocommerce-wishlist\assets\css\jquery.selectBox.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/plugins/yith-woocommerce-wishlist/assets/css/style.css?ver=4.14.0
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\plugins\yith-woocommerce-wishlist\assets\css\style.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/themes/creote/assets/css/bootstrap.min.css?ver=5.1.2
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\themes\creote\assets\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/themes/creote/assets/css/font-awesome.min.css?ver=4.7.0
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\themes\creote\assets\css\font-awesome.min.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/themes/creote/assets/css/icomoon.css?ver=1.0.0
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\themes\creote\assets\css\icomoon.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/themes/creote/assets/css/metabox.css?ver=6.8.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\themes\creote\assets\css\metabox.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/themes/creote/assets/css/rtl.css?ver=1.0
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\themes\creote\assets\css\rtl.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/themes/creote/assets/css/scss/elements/mobile.css?ver=6.8.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\themes\creote\assets\css\scss\elements\mobile.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/themes/creote/assets/css/scss/elements/theme-css.css?ver=6.8.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\themes\creote\assets\css\scss\elements\theme-css.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/themes/creote/style.css?ver=6.8.5
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\themes\creote\style.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/uploads/2025/10/10.png
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\uploads\2025\10\10.png
+Content Type: image/png
+
+Uri: https://waterfrontsmiles.com/wp-content/uploads/2025/10/12.png
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\uploads\2025\10\12.png
+Content Type: image/png
+
+Uri: https://waterfrontsmiles.com/wp-content/uploads/2025/10/13.png
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\uploads\2025\10\13.png
+Content Type: image/png
+
+Uri: https://waterfrontsmiles.com/wp-content/uploads/2025/10/14.png
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\uploads\2025\10\14.png
+Content Type: image/png
+
+Uri: https://waterfrontsmiles.com/wp-content/uploads/2025/10/15-1024x576.png
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\uploads\2025\10\15-1024x576.png
+Content Type: image/png
+
+Uri: https://waterfrontsmiles.com/wp-content/uploads/2025/10/15.png
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\uploads\2025\10\15.png
+Content Type: image/png
+
+Uri: https://waterfrontsmiles.com/wp-content/uploads/2025/10/3-1.png
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\uploads\2025\10\3-1.png
+Content Type: image/png
+
+Uri: https://waterfrontsmiles.com/wp-content/uploads/2025/11/Untitled-design-27-100x100.png
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\uploads\2025\11\Untitled-design-27-100x100.png
+Content Type: image/png
+
+Uri: https://waterfrontsmiles.com/wp-content/uploads/2025/11/Untitled-design-27-300x300.png
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\uploads\2025\11\Untitled-design-27-300x300.png
+Content Type: image/png
+
+Uri: https://waterfrontsmiles.com/wp-content/uploads/2026/01/MTPhotography-012-scaled.jpg
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\uploads\2026\01\MTPhotography-012-scaled.jpg
+Content Type: image/jpeg
+
+Uri: https://waterfrontsmiles.com/wp-content/uploads/2026/01/MTPhotography-016-scaled.jpg
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\uploads\2026\01\MTPhotography-016-scaled.jpg
+Content Type: image/jpeg
+
+Uri: https://waterfrontsmiles.com/wp-content/uploads/2026/01/MTPhotography-047-scaled.jpg
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\uploads\2026\01\MTPhotography-047-scaled.jpg
+Content Type: image/jpeg
+
+Uri: https://waterfrontsmiles.com/wp-content/uploads/2026/01/MTPhotography-101-scaled.jpg
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\uploads\2026\01\MTPhotography-101-scaled.jpg
+Content Type: image/jpeg
+
+Uri: https://waterfrontsmiles.com/wp-content/uploads/elementor/css/post-15.css?ver=1778776375
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\uploads\elementor\css\post-15.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-content/uploads/elementor/css/post-4167.css?ver=1778776875
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-content\uploads\elementor\css\post-4167.css
+Content Type: text/css
+
+Uri: https://waterfrontsmiles.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-includes\js\jquery\jquery-migrate.min.js
+Content Type: application/x-javascript
+
+Uri: https://waterfrontsmiles.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-includes\js\jquery\jquery.min.js
+Content Type: application/x-javascript
+
+Uri: https://waterfrontsmiles.com/wp-json/
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-json\index.htm
+Content Type: application/json
+
+Uri: https://waterfrontsmiles.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwaterfrontsmiles.com%2F
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-json\oembed\1.0\embed
+Content Type: application/json
+
+Uri: https://waterfrontsmiles.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwaterfrontsmiles.com%2F&format=xml
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-json\oembed\1.0\embed-1
+Content Type: text/xml
+
+Uri: https://waterfrontsmiles.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwaterfrontsmiles.com%2Fabout-us%2F
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-json\oembed\1.0\embed-3
+Content Type: application/json
+
+Uri: https://waterfrontsmiles.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwaterfrontsmiles.com%2Fcontact-us-01%2F
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-json\oembed\1.0\embed-2
+Content Type: application/json
+
+Uri: https://waterfrontsmiles.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwaterfrontsmiles.com%2Fhome-15%2F
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-json\oembed\1.0\embed-4
+Content Type: application/json
+
+Uri: https://waterfrontsmiles.com/wp-json/oembed/1.0/embed?url=https:%2F%2Fwaterfrontsmiles.com%2Finsurance%2F
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-json\oembed\1.0\embed-5
+Content Type: application/json
+
+Uri: https://waterfrontsmiles.com/wp-json/wp/v2/pages/4167
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\wp-json\wp\v2\pages\4167
+Content Type: application/json
+
+Uri: https://waterfrontsmiles.com/xmlrpc.php?rsd
+File Name: C:\Downloaded Web Sites\waterfrontsmiles.com\xmlrpc.php
+Content Type: text/xml
+

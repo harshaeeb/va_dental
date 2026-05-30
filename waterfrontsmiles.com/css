@@ -1,0 +1,78 @@
+﻿@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: url(s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfAZFhjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url(s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url(s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fAZFhjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url(s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZFhjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url(s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYAZFhjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: url(s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyYAZFhjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: url(s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYAZFhjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 400;
+  src: url(s/spartan/v22/l7gAbjR61M69yt8Z8w6FZf9WoBxdBrGFuV6HABE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 500;
+  src: url(s/spartan/v22/l7gAbjR61M69yt8Z8w6FZf9WoBxdBrG3uV6HABE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 600;
+  src: url(s/spartan/v22/l7gAbjR61M69yt8Z8w6FZf9WoBxdBrFbvl6HABE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 700;
+  src: url(s/spartan/v22/l7gAbjR61M69yt8Z8w6FZf9WoBxdBrFivl6HABE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 800;
+  src: url(s/spartan/v22/l7gAbjR61M69yt8Z8w6FZf9WoBxdBrEFvl6HABE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 900;
+  src: url(s/spartan/v22/l7gAbjR61M69yt8Z8w6FZf9WoBxdBrEsvl6HABE.ttf) format('truetype');
+}
