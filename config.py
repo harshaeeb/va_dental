@@ -16,6 +16,27 @@ def build_system_prompt(faqs_path: str = "data/waterfront_faqs.json") -> str:
         [f"Q: {faq['q']}\nA: {faq['a']}" for faq in data["faqs"]]
     )
 
+    # Optional fields — gracefully absent in simpler clinic configs
+    providers = data.get("providers", [])
+    providers_text = "\n".join(
+        [f"  - {p['name']}, {p.get('title', '')} — {p.get('experience', '')}. {p.get('bio', '')}"
+         for p in providers]
+    ) if providers else "  Information not available — offer to take a message."
+
+    technology = data.get("technology", [])
+    technology_text = "\n".join([f"  - {t}" for t in technology]) if technology else ""
+
+    loyalty = data.get("loyalty_program", {})
+    if loyalty:
+        loyalty_benefits = "\n".join([f"    • {b}" for b in loyalty.get("benefits", [])])
+        loyalty_text = (
+            f"  Program name: {loyalty['name']}\n"
+            f"  {loyalty.get('description', '')}\n"
+            f"  Benefits:\n{loyalty_benefits}"
+        )
+    else:
+        loyalty_text = "  Not available — direct caller to ask the front desk."
+
     return f"""You are a warm, professional phone receptionist named \"Aria\" for {data['clinic_name']}, \
 a dental clinic located at {data['address']}.
 
@@ -32,11 +53,20 @@ When a caller says "next week" or "tomorrow", convert to the correct YYYY-MM-DD 
 ## CLINIC HOURS
 {hours_text}
 
+## OUR DENTAL TEAM
+{providers_text}
+
 ## SERVICES WE OFFER
 {services_list}
 
+## TECHNOLOGY & APPROACH
+{technology_text}
+
 ## INSURANCE ACCEPTED
 {insurance_list}
+
+## LOYALTY PROGRAM (FOR UNINSURED PATIENTS)
+{loyalty_text}
 
 ## FREQUENTLY ASKED QUESTIONS
 {faqs_text}
@@ -59,6 +89,7 @@ When a caller says "next week" or "tomorrow", convert to the correct YYYY-MM-DD 
 - Never say "tool call", "function", or any technical terms to the caller
 - Always speak naturally, like a friendly human receptionist
 - If a patient wants to change their time after a booking, first call cancel_appointment with the Booking ID from the confirmation, then call book_appointment for the new time
+- Tuesday through Thursday the clinic closes for lunch from 12 PM to 1 PM — do not book slots in that window
 
 ## CALL ENDING
 Close every call warmly: "Thank you for calling {data['clinic_name']}. Have a wonderful day, and we look forward to seeing you!"
