@@ -63,6 +63,7 @@ GOOGLE_CREDENTIALS_JSON=<full contents of google-credentials.json>
 GOOGLE_CALENDAR_ID=harsha.eeb@gmail.com
 CLINIC_TIMEZONE=America/Chicago
 CLINIC_NAME=Waterfront Family Dentistry
+SUPERVISOR_PHONE=+14699825114
 ```
 
 ## Vapi Assistant Details
@@ -74,13 +75,14 @@ CLINIC_NAME=Waterfront Family Dentistry
 - Dashboard: dashboard.vapi.ai → Assistants
 - To assign to phone number: Phone Numbers → click number → Inbound Settings → select assistant
 
-## Vapi Tools (4 tools — all inline in model.tools)
+## Vapi Tools (5 tools — all inline in model.tools)
 | Tool | Description |
 |------|-------------|
 | `check_availability` | Queries Google Calendar for open slots on a date |
 | `book_appointment` | Creates a Google Calendar event for the patient |
 | `cancel_appointment` | Deletes a Google Calendar event by event ID (used for rescheduling) |
 | `take_message` | Logs caller name/phone/message to Railway stdout |
+| `transfer_to_supervisor` | Vapi-native `transferCall` — bridges call to +14699825114 (no FastAPI involved) |
 
 ## Post-Deploy Workflow (after any system prompt change)
 1. Ensure `.env` has `VAPI_API_KEY=598d5af2-695a-4c93-9772-4386e22b2867`
@@ -92,12 +94,14 @@ CLINIC_NAME=Waterfront Family Dentistry
 - [x] FastAPI server deployed on Railway
 - [x] Google Calendar API enabled and service account has calendar access
 - [x] Vapi assistant registered with inline tools (gpt-4o-mini)
-- [x] All 4 tools working: check_availability, book_appointment, cancel_appointment, take_message
+- [x] All 4 calendar/message tools working: check_availability, book_appointment, cancel_appointment, take_message
 - [x] `{{currentDateTime}}` injected into system prompt (correct year in bookings)
 - [x] Datetime timezone bug fixed (`replace(tzinfo=None)` in calendar_service.py)
 - [x] Waterfront Family Dentistry knowledge base built from live website HTML
 - [x] config.py surfaces providers, technology, loyalty program in system prompt
+- [x] Call transfer to supervisor (+14699825114) via Vapi-native transferCall tool
 - [ ] Phone number assigned in Vapi dashboard
+- [ ] create_assistant.py re-run to register updated assistant (with transfer tool) in Vapi
 
 ## Key Architecture Decisions
 - **Inline tools** (not pre-created Vapi toolIds): avoids LLM result routing issues
@@ -105,6 +109,7 @@ CLINIC_NAME=Waterfront Family Dentistry
 - **Lazy-load CalendarService**: server starts cleanly without credentials present
 - **`GOOGLE_CREDENTIALS_JSON` env var**: avoids needing a credentials file on Railway
 - **`strftime("%-I:%M %p")`**: Linux-only format — works on Railway, breaks on Windows
+- **`transferCall` tool type**: Vapi handles PSTN transfer natively — no FastAPI round-trip needed; `SUPERVISOR_PHONE` env var makes the number configurable without re-deploying
 
 ## Known Bugs Fixed
 | Bug | Fix |

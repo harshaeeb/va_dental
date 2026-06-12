@@ -48,6 +48,8 @@ flowchart TD
     Router -->|"tool result"| Webhook
     Webhook -->|"HTTP response"| LLM
 
+    LLM -->|"transferCall\n(native Vapi)"| Supervisor["☎ Supervisor\n+14699825114"]
+
     KB -->|"read at startup"| PromptBuilder
     PromptBuilder -->|"system prompt\n(injected per call)"| LLM
 ```
@@ -90,6 +92,21 @@ sequenceDiagram
     V->>P: Call ends
 ```
 
+### Transfer Flow — Caller Requests a Human
+
+```mermaid
+sequenceDiagram
+    participant P as Patient (Phone)
+    participant V as Vapi.ai
+    participant S as Supervisor (+14699825114)
+
+    P->>V: "Can I speak to someone?"
+    V->>V: LLM triggers transfer_to_supervisor
+    V->>P: "Of course — let me connect you with a team member right now."
+    V->>S: PSTN transfer (Vapi-native, no FastAPI call)
+    S->>P: Supervisor picks up
+```
+
 ---
 
 ## Component Breakdown
@@ -102,6 +119,7 @@ sequenceDiagram
 | LLM | OpenAI gpt-4o-mini, temp 0.4 | Drives conversation, decides when to call tools |
 | Text-to-Speech | Vapi Default | Converts Aria's responses to audio |
 | Tool definitions | Inline in `model.tools` | Tells LLM when/how to call backend tools |
+| Call Transfer | Vapi `transferCall` (native) | PSTN transfer to supervisor — no FastAPI involved |
 
 **Key design choice:** Tools are defined *inline* in the assistant config (not as pre-created Vapi tool objects). This ensures tool results are properly routed back to the LLM.
 
@@ -134,7 +152,7 @@ Loaded at startup and rendered into the system prompt. Contains:
 
 ---
 
-## The 4 Tools
+## The 5 Tools
 
 ```mermaid
 flowchart LR
@@ -142,15 +160,26 @@ flowchart LR
     LLM -->|"name, phone,\nservice, date, time"| T2
     LLM -->|"event_id"| T3
     LLM -->|"name, phone,\nmessage"| T4
+    LLM -->|"caller requests human\nor booking fails"| T5
 
     T1["check_availability\n→ list of open slots"]
     T2["book_appointment\n→ calendar event + Booking ID"]
     T3["cancel_appointment\n→ deletes event (for reschedule)"]
     T4["take_message\n→ logs to Railway stdout"]
+    T5["transfer_to_supervisor\n→ PSTN transfer (Vapi-native)"]
 
     T1 & T2 & T3 -->|"Calendar API"| GCal[("Google\nCalendar")]
     T4 -->|"stdout log"| Log["Railway\nLogs"]
+    T5 -->|"no FastAPI call\nVapi transfers directly"| Sup["☎ Supervisor\n+14699825114"]
 ```
+
+### Tool Transfer Triggers
+
+`transfer_to_supervisor` fires when either condition is met:
+1. Caller asks to speak to a person, representative, supervisor, or the doctor
+2. Aria cannot book or confirm an appointment due to a calendar or system error
+
+On transfer failure, Aria falls back to `take_message` to collect the caller's details for a callback.
 
 ---
 
@@ -174,6 +203,7 @@ GOOGLE_CALENDAR_ID        # harsha.eeb@gmail.com
 CLINIC_TIMEZONE           # America/Chicago
 CLINIC_NAME               # Waterfront Family Dentistry
 VAPI_API_KEY              # Vapi secret key
+SUPERVISOR_PHONE          # +14699825114 — destination for call transfers
 ```
 
 ---
@@ -190,6 +220,8 @@ VAPI_API_KEY              # Vapi secret key
 | Lazy-load `CalendarService` | Server boots cleanly without credentials; fails gracefully only when a calendar tool is called |
 | `GOOGLE_CREDENTIALS_JSON` env var | Railway has no filesystem persistence; inlining credentials as an env var avoids file management |
 | gpt-4o-mini over Anthropic models | Vapi requires a separate Anthropic API key; OpenAI models work with Vapi's built-in key |
+| `transferCall` tool type (not a function tool) | Vapi handles PSTN transfer natively — no HTTP round-trip to FastAPI, lower latency, no server-side code needed |
+| Fallback to `take_message` on transfer failure | If the supervisor line is unreachable, caller details are still captured rather than losing the caller entirely |
 
 ---
 
@@ -199,9 +231,11 @@ VAPI_API_KEY              # Vapi secret key
 Patient speech
   → Deepgram STT (transcript)
   → gpt-4o-mini + system prompt (decides action)
-  → [if tool needed] HTTP POST to FastAPI /vapi/tool-call
+  → [if calendar tool needed] HTTP POST to FastAPI /vapi/tool-call
       → Google Calendar API (read/write)
       → result JSON back to Vapi
+  → [if transfer triggered] Vapi transferCall (PSTN, no FastAPI involved)
+      → call bridged to supervisor at +14699825114
   → gpt-4o-mini (formulates spoken reply)
   → Vapi TTS (audio)
   → Patient hears response
