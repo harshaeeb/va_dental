@@ -29,6 +29,8 @@ if not VAPI_API_KEY:
     print("ERROR: VAPI_API_KEY not set in .env")
     sys.exit(1)
 
+SUPERVISOR_PHONE = os.getenv("SUPERVISOR_PHONE", "+14699825114")
+
 SERVER_URL = "https://vadental-production.up.railway.app/vapi/tool-call"
 
 HEADERS = {
@@ -170,6 +172,25 @@ INLINE_TOOLS = [
                 "type": "request-start",
                 "content": "Got it, let me note that down...",
             },
+        ],
+    },
+    {
+        "type": "transferCall",
+        "function": {
+            "name": "transfer_to_supervisor",
+            "description": (
+                "Transfer the caller to a live team member. Use this ONLY when: "
+                "(1) the caller asks to speak to a person, representative, supervisor, or the doctor, or "
+                "(2) you are unable to book or confirm an appointment due to a calendar or system error."
+            ),
+        },
+        "destinations": [
+            {
+                "type": "number",
+                "number": SUPERVISOR_PHONE,
+                "message": "Please hold for just a moment — I'm connecting you with a team member right now.",
+                "description": "Clinic supervisor",
+            }
         ],
     },
 ]
