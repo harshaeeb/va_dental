@@ -8,38 +8,25 @@ load_dotenv()
 
 app = FastAPI(title="Waterfront Family Dentistry Voice Agent")
 
-# Pre-load service durations for lookup by name
-with open("data/waterfront_faqs.json") as f:
-    FAQ_DATA = json.load(f)
-
-SERVICE_DURATIONS: dict[str, int] = {
-    s["name"].lower(): s["duration_minutes"] for s in FAQ_DATA["services"]
-}
-
-# Lazy-load CalendarService only when Google credentials are available
-_calendar = None
+# Lazy-load PMS backend — Google Calendar, NexHealth, or Dual (set via PMS_BACKEND env var)
+_pms = None
 
 
-def get_calendar():
-    global _calendar
-    if _calendar is None:
-        has_json = bool(os.getenv("GOOGLE_CREDENTIALS_JSON"))
-        has_file = bool(os.getenv("GOOGLE_CREDENTIALS_PATH")) and os.path.exists(
-            os.getenv("GOOGLE_CREDENTIALS_PATH", "")
-        )
-        if not has_json and not has_file:
-            raise RuntimeError(
-                "Google credentials not configured. "
-                "Set GOOGLE_CREDENTIALS_JSON or GOOGLE_CREDENTIALS_PATH."
-            )
-        from calendar_service import CalendarService
-        _calendar = CalendarService()
-    return _calendar
+def get_pms():
+    global _pms
+    if _pms is None:
+        from pms.backend import get_backend
+        _pms = get_backend()
+    return _pms
 
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "clinic": os.getenv("CLINIC_NAME", "Waterfront Family Dentistry")}
+    return {
+        "status": "ok",
+        "clinic": os.getenv("CLINIC_NAME", "Waterfront Family Dentistry"),
+        "pms_backend": os.getenv("PMS_BACKEND", "google"),
+    }
 
 
 @app.post("/vapi/tool-call")
@@ -47,17 +34,14 @@ async def handle_tool_call(request: Request):
     body = await request.json()
     message = body.get("message", {})
 
-    # Support both pre-created tool format (toolCallList[].name) and
-    # inline/server tool format (toolCallList[].function.name)
+    # Support both inline tool format (function.name) and pre-created tool format (name)
     raw_calls = message.get("toolCallList", [])
 
     results = []
     for call in raw_calls:
-        # Inline tools nest name/arguments under a "function" key
         if "function" in call:
             tool_name = call["function"].get("name")
             raw_args = call["function"].get("arguments", {})
-            # arguments may arrive as a JSON string
             if isinstance(raw_args, str):
                 try:
                     raw_args = json.loads(raw_args)
@@ -71,41 +55,16 @@ async def handle_tool_call(request: Request):
 
         try:
             if tool_name == "check_availability":
-                slots = get_calendar().get_available_slots(
-                    date_str=args["date"],
-                    duration_minutes=args["duration_minutes"],
-                )
-                if slots:
-                    result_text = (
-                        f"Available slots on {args['date']}: {', '.join(slots)}"
-                    )
-                else:
-                    result_text = (
-                        f"No availability found on {args['date']}. "
-                        "Suggest the caller try the next business day."
-                    )
+                result_text = get_pms().get_availability(args)
 
             elif tool_name == "book_appointment":
-                service_key = args["service"].lower()
-                duration = SERVICE_DURATIONS.get(service_key, 30)
-
-                confirmation = get_calendar().book_appointment(
-                    patient_name=args["patient_name"],
-                    patient_phone=args["patient_phone"],
-                    service=args["service"],
-                    date_str=args["date"],
-                    time_str=args["time"],
-                    duration_minutes=duration,
-                )
-                result_text = (
-                    f"Appointment confirmed! {args['patient_name']} is booked for "
-                    f"{args['service']} on {args['date']} at {args['time']}. "
-                    f"Booking ID: {confirmation['event_id']}"
-                )
+                result_text = get_pms().book_appointment(args)
 
             elif tool_name == "cancel_appointment":
-                get_calendar().cancel_appointment(event_id=args["event_id"])
-                result_text = "The appointment has been cancelled successfully."
+                result_text = get_pms().cancel_appointment(args)
+
+            elif tool_name == "reschedule_appointment":
+                result_text = get_pms().reschedule_appointment(args)
 
             elif tool_name == "take_message":
                 print(
