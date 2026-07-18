@@ -120,7 +120,7 @@ Both backends expose slots via the same `[slot:XXX]` pattern so the LLM passes t
 
 ## Vapi Assistant
 - **Name**: Waterfront Family Dentistry Receptionist
-- **Assistant ID**: `62e72b31-22e9-4078-b32a-17551f176bfa` *(re-run `create_assistant.py` after any prompt or tool schema change)*
+- **Assistant ID**: `0998351c-6a73-4dea-ac45-7e88f5232f59` *(re-run `create_assistant.py` after any prompt or tool schema change)*
 - **Model**: gpt-4o-mini (OpenAI via Vapi), temperature 0.4
 - **Transcriber**: Deepgram nova-2, en-US
 - **Tool type**: Inline (in `model.tools`) — NOT pre-created toolIds
@@ -230,7 +230,7 @@ System prompt rules:
 ---
 
 ## Pending Actions (user must do)
-- [ ] Re-run `python vapi_setup/create_assistant.py` to register updated tool schemas in Vapi
+- [x] Re-run `python vapi_setup/create_assistant.py` — done, ID: `0998351c-6a73-4dea-ac45-7e88f5232f59`
 - [ ] Assign updated assistant to phone number in Vapi dashboard
 - [ ] (Optional) Sign up at developer.nexhealth.com, add NexHealth env vars to Railway, set `PMS_BACKEND=dual`
 - [ ] (Deferred) Add more call transfer triggers beyond the current two

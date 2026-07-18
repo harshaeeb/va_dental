@@ -68,7 +68,7 @@ SUPERVISOR_PHONE=+14699825114
 
 ## Vapi Assistant Details
 - **Assistant name**: `Waterfront Family Dentistry Receptionist`
-- **Assistant ID**: `62e72b31-22e9-4078-b32a-17551f176bfa` *(may be stale — re-run create_assistant.py after system prompt changes)*
+- **Assistant ID**: `0998351c-6a73-4dea-ac45-7e88f5232f59` *(may be stale — re-run create_assistant.py after system prompt changes)*
 - **Model**: `gpt-4o-mini` (OpenAI via Vapi), temperature 0.4
 - **Transcriber**: Deepgram nova-2 (en-US)
 - **Vapi API key**: `598d5af2-695a-4c93-9772-4386e22b2867`
@@ -101,7 +101,7 @@ SUPERVISOR_PHONE=+14699825114
 - [x] config.py surfaces providers, technology, loyalty program in system prompt
 - [x] Call transfer to supervisor (+14699825114) via Vapi-native transferCall tool
 - [ ] Phone number assigned in Vapi dashboard
-- [ ] create_assistant.py re-run to register updated assistant (with transfer tool) in Vapi
+- [x] create_assistant.py re-run to register updated assistant (ID: 0998351c-6a73-4dea-ac45-7e88f5232f59)
 
 ## Key Architecture Decisions
 - **Inline tools** (not pre-created Vapi toolIds): avoids LLM result routing issues
