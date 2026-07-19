@@ -229,8 +229,53 @@ System prompt rules:
 
 ---
 
+## SaaS Packaging Strategy
+Two options evaluated for packaging as a revenue product:
+
+**Strategy 1 — Multi-tenant shared deployment** (one Railway instance, one Vapi account, clinic namespace via env var)
+- Cost: ~$33–45/month total; ~$5–8/client at 6+ clients
+- Risk: data leakage if namespace isolation breaks; complex HIPAA BAA chain; harder per-client customization
+
+**Strategy 2 — Dedicated per-client deployment** *(recommended)*
+- One Railway service + one Vapi assistant per client; code is identical, only env vars differ
+- Cost: ~$33–45/month/client (Vapi ~$28–40 + Railway ~$3–5 + phone ~$2)
+- Margin: 85–90% at $299–599/month/client pricing
+- Advantages: zero cross-client data risk, clean HIPAA isolation, no code refactor needed, easy deploy automation
+- Scale path: automate new client provisioning with a script that forks Railway env vars + runs `create_assistant.py`
+
+---
+
+## HIPAA / Legal — Compliance Status
+BAA templates drafted (2026-07-19) as .docx files — **not committed to repo** — stored locally by user.
+
+| Document | Parties | Status |
+|----------|---------|--------|
+| `BAA_Document1_Client_Agreement.docx` | Dental Practice (CE) ↔ Your Company (BA) | Draft — attorney review required |
+| `BAA_Document2_Subcontractor_Agreement.docx` | Your Company ↔ Vapi / Railway / Google | Draft — attorney review required |
+
+Both documents cover: Federal HIPAA/HITECH (45 C.F.R. Parts 160/164), Texas HSC Chapter 181 (TMRPA), Texas B&C Chapter 521 (breach notification).
+
+**Open compliance gaps (block HIPAA clients until resolved):**
+1. **Railway** — no HIPAA BAA available. Mitigation: disable log storage now. Fix: migrate FastAPI to Google Cloud Run (covered by GCP BAA).
+2. **Google Calendar** — personal Gmail (`harsha.eeb@gmail.com`) is NOT covered by Google's Cloud BAA. Fix: migrate calendar to a Google Workspace account.
+3. **Vapi** — no published BAA process. Action: email `legal@vapi.ai` with the subcontractor BAA template.
+
+Key Texas-specific provisions included in BAA templates:
+- §181.101 workforce training requirement (CE obligation)
+- §181.153 no-sale-of-PHI rule (BA obligation)
+- §181.203 private right of action disclosure
+- §§181.201–181.202 AG enforcement + $5,000/violation/day civil penalty notice
+- Texas B&C §521.053 breach notification to individuals AND Texas AG within 60 days
+- Sub-BAA uses stricter timelines: 5 business days (security incidents), 5 calendar days (breach) vs. 10/10 in client BAA
+
+---
+
 ## Pending Actions (user must do)
 - [x] Re-run `python vapi_setup/create_assistant.py` — done, ID: `0998351c-6a73-4dea-ac45-7e88f5232f59`
 - [ ] Assign updated assistant to phone number in Vapi dashboard
 - [ ] (Optional) Sign up at developer.nexhealth.com, add NexHealth env vars to Railway, set `PMS_BACKEND=dual`
 - [ ] (Deferred) Add more call transfer triggers beyond the current two
+- [ ] **[Before HIPAA clients]** Migrate Google Calendar to Google Workspace account; accept GCP HIPAA BAA in Cloud console
+- [ ] **[Before HIPAA clients]** Email `legal@vapi.ai` to negotiate/execute subcontractor BAA
+- [ ] **[Before HIPAA clients]** Migrate FastAPI from Railway to Google Cloud Run; disable Railway log storage in the interim
+- [ ] Have a licensed Texas HIPAA attorney review both BAA .docx templates before executing with any client
